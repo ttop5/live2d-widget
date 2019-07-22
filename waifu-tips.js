@@ -54,7 +54,7 @@ function loadWidget(waifuPath, apiPath) {
 		});
 		var re = /x/;
 		re.toString = function () {
-			showMessage("哈哈，你打开了控制台，是想要看看我的秘密吗？", 6000, 9);
+			showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
 			return "";
 		};
 		$(document).on("copy", function () {
@@ -79,7 +79,7 @@ function loadWidget(waifuPath, apiPath) {
 			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红～";
 			else if (now > 19 && now <= 21) text = "晚上好，今天过得怎么样？";
 			else if (now > 21 && now <= 23) text = ["已经这么晚了呀，早点休息吧，晚安～", "深夜时要爱护眼睛呀！"];
-			else text = "好久不见，日子过得好快呢……";
+			else text = "啊~生活，是生活强奸了所有人…";
 		} else if (document.referrer !== "") {
 			var referrer = document.createElement("a");
 			referrer.href = document.referrer;
@@ -99,7 +99,7 @@ function loadWidget(waifuPath, apiPath) {
 	var userAction = false,
 		hitokotoTimer = null,
 		messageTimer = null,
-		messageArray = ["已经过了这么久了呀，日子过得好快呢……", "大坏蛋！你都多久没碰人家了呀，嘤嘤嘤~", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"];
+		messageArray = ["你是不是不爱人家了呀，555~", "大坏蛋！你都多久没碰人家了呀，嘤嘤嘤~", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"];
 	if ($(".fa-share-alt").is(":hidden")) messageArray.push("记得把小家加入Adblock白名单哦！");
 	$(document).mousemove(function () {
 		userAction = true;
